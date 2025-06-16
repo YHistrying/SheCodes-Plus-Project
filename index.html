@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form id="weatherSearch">
+        <input
+          type="text"
+          id="cityInput"
+          placeholder="Enter city name"
+          required
+          class="cityInput"
+        />
+        <button type="submit" class="submitCity">Get Weather</button>
+      </form>
+      <h1 class="cityNow" id="cityNow">Paris</h1>
+      <div class="weatherNow">
+        <p class="nowWeatherDetails">
+          <span id="dateNow">Tuesday 14:49</span>,
+          <span id="descriptionNow">moderate rain</span> <br />
+          Humidity: <span class="humidityNow" id="humidityNow">87%</span>, Wind:
+          <span class="windNow" id="windNow">7.2km/h</span>
+        </p>
+        <div class="tempNow">
+          <span class="nowTempIcon" id="iconNow"><img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png"></span
+          ><span class="nowTempValue" id="nowTempValue">24</span
+          ><span class="nowUnit">°C</span>
+        </div>
+      </div>
+        <footer>
+          <p>
+            This project was coded by
+            <a href="https://github.com/YHistrying" target="_blank"
+              >Yijen Hsieh</a
+            >
+            and is
+            <a
+              href="https://github.com/YHistrying/SheCodes-Week-7-HW"
+              target="_blank"
+            >
+              on GitHub</a
+            >
+            and
+            <a href="https://weather-app-hw7-yh.netlify.app/" target="_blank">hosted on Netlify</a>
+          </p>
+        </footer>
+      </div>
+      <script src="src/index.js"></script>
+    </div>
+  </body>
+</html>
